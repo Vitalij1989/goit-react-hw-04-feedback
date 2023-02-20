@@ -27,16 +27,15 @@ export const Statistics = ({
       </StatisticsItem>
     </StatisticsList>
     <StatisticsContainer>
-      <StatisticsSum>Total: {total()}</StatisticsSum>
-      <StatisticsSum>Positive feedback: {positivePercentage()}%</StatisticsSum>
+      <StatisticsSum>Total: {total}</StatisticsSum>
+      <StatisticsSum>Positive feedback: {positivePercentage}%</StatisticsSum>
     </StatisticsContainer>
   </>
 );
-
 Statistics.propTypes = {
   good: PropTypes.number.isRequired,
   neutral: PropTypes.number.isRequired,
   bad: PropTypes.number.isRequired,
-  total: PropTypes.func.isRequired,
-  positivePercentage: PropTypes.func.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
