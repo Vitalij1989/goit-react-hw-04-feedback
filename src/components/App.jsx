@@ -1,16 +1,12 @@
+import { GlobalStyle } from './Global/global.styed';
+import { Wrapper } from './WrapperList/WrapperList.styled';
+import { Feedback } from './Feedback';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Wrapper>
+      <Feedback />
+      <GlobalStyle />
+    </Wrapper>
   );
 };
